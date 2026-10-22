@@ -4,6 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SG3JSYXM08"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SG3JSYXM08');
+  </script>
+
   <!-- ============ SEO ============ -->
   <title>UniCalc India – CGPA to Percentage Calculators (MU, SPPU, VTU, AKTU) &amp; Exam Age Calculator</title>
   <meta name="description" content="Free CGPA to percentage calculators for Mumbai University, SPPU, VTU and AKTU with the formula shown for every result, plus an exact exam age calculator for SSC, UPSC and other government exams." />
@@ -419,8 +428,7 @@
         k === 'age' ? runAge() : runCgpa(k);
       });
     });
-    // Pressing Enter inside a CGPA field also calculates
-    ['mu', 'sppu', 'vtu', 'aktu'].forEach((p) =>
+    // Pressing Enter inside a CGPA field also calculates    ['mu', 'sppu', 'vtu', 'aktu'].forEach((p) =>
       $(p + '-cgpa').addEventListener('keydown', (e) => { if (e.key === 'Enter') runCgpa(p); }));
 
     // Footer year and default cut-off date = today (user can change it)
