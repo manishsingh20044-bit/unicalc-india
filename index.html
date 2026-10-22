@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SG3JSYXM08"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7DMG3N3XM"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-SG3JSYXM08');
+    gtag('config', 'G-Q7DMG3N3XM');
   </script>
 
   <!-- ============ SEO ============ -->
@@ -428,7 +428,8 @@
         k === 'age' ? runAge() : runCgpa(k);
       });
     });
-    // Pressing Enter inside a CGPA field also calculates    ['mu', 'sppu', 'vtu', 'aktu'].forEach((p) =>
+    // Pressing Enter inside a CGPA field also calculates
+    ['mu', 'sppu', 'vtu', 'aktu'].forEach((p) =>
       $(p + '-cgpa').addEventListener('keydown', (e) => { if (e.key === 'Enter') runCgpa(p); }));
 
     // Footer year and default cut-off date = today (user can change it)
