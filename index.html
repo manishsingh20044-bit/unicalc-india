@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============ SEO ============ -->
+  <title>UniCalc India – CGPA to Percentage Calculators (MU, SPPU, VTU, AKTU) &amp; Exam Age Calculator</title>
+  <meta name="description" content="Free CGPA to percentage calculators for Mumbai University, SPPU, VTU and AKTU with the formula shown for every result, plus an exact exam age calculator for SSC, UPSC and other government exams." />
+  <meta name="keywords" content="Mumbai University CGPA to percentage 2026, SPPU CGPA calculator, VTU CGPA to percentage formula, AKTU CGPA to percentage, exam age calculator, SSC age calculator, UPSC age limit calculator" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="UniCalc India – CGPA to Percentage &amp; Exam Age Calculators" />
+  <meta property="og:description" content="Accurate CGPA to percentage calculators for Indian universities and an exact exam age calculator." />
+  <meta property="og:type" content="website" />
+
+  <!-- Tailwind CSS via CDN (only external library) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { brand: { 50:'#eff6ff', 100:'#dbeafe', 500:'#2563eb', 600:'#1d4ed8', 700:'#1e40af' }, leaf: { 50:'#ecfdf5', 100:'#d1fae5', 500:'#10b981', 600:'#059669' } } } }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .result-box { min-height: 3.5rem; }
+  </style>
+
+  <!-- ============ FAQ Schema (JSON-LD) ============ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I convert Mumbai University CGPA to percentage?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The commonly published Mumbai University engineering formula is Percentage = 7.1 × CGPA + 11. Rules can differ by faculty and scheme, so always confirm with your official marksheet or the university circular." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the SPPU CGPA to percentage formula?",
+        "acceptedAnswer": { "@type": "Answer", "text": "SPPU circular no. 332 of 2020 gives grade-band equations (for example 10 × CGPA − 7.5 for the A band, CGPA 6.75 to 8.24). A simpler (CGPA − 0.75) × 10 rule is also widely quoted. UniCalc India lets you choose and shows the equation used." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the VTU CGPA to percentage formula?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The most widely quoted VTU formula is Percentage = (CGPA − 0.75) × 10. Some sources list CGPA × 10 for newer schemes, so verify against your VTU marksheet." }
+      },
+      {
+        "@type": "Question",
+        "name": "How is AKTU CGPA converted to percentage?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Published sources differ: some give Percentage = (CGPA × 10) − 7.5, others CGPA × 10. UniCalc India supports both and shows the formula used. Check your AKTU result document." }
+      },
+      {
+        "@type": "Question",
+        "name": "How is age calculated for government exams like SSC and UPSC?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Age is counted from your date of birth to the cut-off date given in the official notification, expressed in completed years, months and days. Use the cut-off date from the notice, not today's date." }
+      },
+      {
+        "@type": "Question",
+        "name": "Are these calculator results official?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Results are for guidance only. Universities and recruiters accept the percentage stated on your official marksheet or conversion certificate." }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-white text-slate-800 antialiased">
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-2 font-extrabold text-xl text-brand-700">
+        <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-500 text-white text-sm">Uc</span>
+        UniCalc <span class="text-leaf-600">India</span>
+      </a>
+      <nav class="hidden md:flex gap-6 text-sm font-medium text-slate-600">
+        <a href="#calculators" class="hover:text-brand-600">Calculators</a>
+        <a href="#guides" class="hover:text-brand-600">Guides</a>
+        <a href="#faq" class="hover:text-brand-600">FAQ</a>
+      </nav>
+      <a href="#calculators" class="md:hidden text-sm font-semibold text-brand-600">Tools ↓</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="bg-gradient-to-b from-brand-50 via-white to-white">
+      <div class="max-w-4xl mx-auto px-4 pt-14 pb-12 text-center">
+        <span class="inline-block rounded-full bg-leaf-100 text-leaf-600 text-xs font-semibold px-3 py-1 mb-4">Free • No sign-up • Works on mobile</span>
+        <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight text-slate-900">
+          Accurate <span class="text-brand-600">CGPA to Percentage</span> Calculators for Indian Universities
+        </h1>
+        <p class="mt-5 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
+          Convert your Mumbai University, SPPU, VTU or AKTU CGPA to percentage, with the exact formula shown for every result. Plus an exam age calculator for SSC, UPSC and other government exams.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-3">
+          <a href="#calculators" class="rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-semibold px-6 py-3 shadow">Start Calculating</a>
+          <a href="#guides" class="rounded-xl border border-slate-200 hover:border-brand-500 text-slate-700 font-semibold px-6 py-3">Read Guides</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CALCULATOR GRID ============ -->
+    <section id="calculators" class="max-w-6xl mx-auto px-4 py-12">
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 text-center">Calculators</h2>
+      <p class="text-center text-slate-500 mt-2 mb-10">Pick your university or tool below. Results update instantly.</p>
+
+      <div class="grid gap-6 md:grid-cols-2">
+
+        <!-- ---------- Tool 1: Mumbai University ---------- -->
+        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm" aria-labelledby="mu-title">
+          <h3 id="mu-title" class="text-lg font-bold text-brand-700">Mumbai University (MU) CGPA to Percentage</h3>
+          <p class="text-sm text-slate-500 mt-1">Select the scheme that applies to your result.</p>
+
+          <label class="block mt-4 text-sm font-medium" for="mu-formula">Formula</label>
+          <select id="mu-formula" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:ring-2 focus:ring-brand-500 focus:outline-none">
+            <option value="mu_eng">Engineering (10-point): 7.1 × CGPA + 11</option>
+            <option value="mu_7pt">7-point scale: 7.25 × CGPA + 11 (commonly cited, verify)</option>
+          </select>
+
+          <label class="block mt-4 text-sm font-medium" for="mu-cgpa">Your CGPA</label>
+          <input id="mu-cgpa" type="number" step="0.01" min="0" inputmode="decimal" placeholder="e.g. 8.20"
+                 class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:ring-2 focus:ring-brand-500 focus:outline-none" />
+
+          <button data-calc="mu" class="mt-4 w-full rounded-lg bg-brand-500 hover:bg-brand-600 text-white font-semibold py-2.5">Calculate</button>
+          <div id="mu-result" class="result-box mt-4 rounded-lg bg-leaf-50 border border-leaf-100 p-3 text-sm" aria-live="polite">Result will appear here.</div>
+
+          <p class="mt-3 text-xs text-amber-700 bg-amber-50 border border-amber-100 rounded-lg p-2">
+            <strong>Disclaimer:</strong> The classic 7.1 × CGPA + 11 rule is the formula we could confirm in published sources. We could not find an official revised 2026 formula, so none is applied here. Always verify with your official marksheet or the latest university circular.
+          </p>
+        </article>
+
+        <!-- ---------- Tool 2: SPPU ---------- -->
+        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm" aria-labelledby="sppu-title">
+          <h3 id="sppu-title" class="text-lg font-bold text-brand-700">SPPU (Pune University) CGPA to Percentage</h3>
+          <p class="text-sm text-slate-500 mt-1">Circular 332 uses a different equation for each grade band.</p>
+
+          <label class="block mt-4 text-sm font-medium" for="sppu-formula">Formula</label>
+          <select id="sppu-formula" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:ring-2 focus:ring-brand-500 focus:outline-none">
+            <option value="sppu_tier">SPPU Circular 332 of 2020 (grade-band equations)</option>
+            <option value="sppu_simple">(CGPA − 0.75) × 10 (widely quoted)</option>
+          </select>
+
+          <label class="block mt-4 text-sm font-medium" for="sppu-cgpa">Your CGPA</label>
+          <input id="sppu-cgpa" type="number" step="0.01" min="0" max="10" inputmode="decimal" placeholder="e.g. 7.85"
+                 class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:ring-2 focus:ring-brand-500 focus:outline-none" />
+
+          <button data-calc="sppu" class="mt-4 w-full rounded-lg bg-brand-500 hover:bg-brand-600 text-white font-semibold py-2.5">Calculate</button>
+          <div id="sppu-result" class="result-box mt-4 rounded-lg bg-leaf-50 border border-leaf-100 p-3 text-sm" aria-live="polite">Result will appear here.</div>
+          <p class="mt-3 text-xs text-slate-500">Published sources differ on SPPU. Check which rule your marksheet or college follows.</p>
+        </article>
+
+        <!-- ---------- Tool 3: VTU ---------- -->
+        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm" aria-labelledby="vtu-title">
+          <h3 id="vtu-title" class="text-lg font-bold text-brand-700">VTU CGPA to Percentage</h3>
+          <p class="text-sm text-slate-500 mt-1">Visvesvaraya Technological University, Belagavi.</p>
+
+          <label class="block mt-4 text-sm font-medium" for="vtu-formula">Formula</label>
+          <select id="vtu-formula" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:ring-2 focus:ring-brand-500 focus:outline-none">
+            <option value="vtu_075">(CGPA − 0.75) × 10 (most widely quoted)</option>
+            <option value="x10">CGPA × 10 (listed by some sources for newer schemes)</option>
+          </select>
+
+          <label class="block mt-4 text-sm font-medium" for="vtu-cgpa">Your CGPA</label>
+          <input id="vtu-cgpa" type="number" step="0.01" min="0" max="10" inputmode="decimal" placeholder="e.g. 8.40"
+                 class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:ring-2 focus:ring-brand-500 focus:outline-none" />
+
+          <button data-calc="vtu" class="mt-4 w-full rounded-lg bg-brand-500 hover:bg-brand-600 text-white font-semibold py-2.5">Calculate</button>
+          <div id="vtu-result" class="result-box mt-4 rounded-lg bg-leaf-50 border border-leaf-100 p-3 text-sm" aria-live="polite">Result will appear here.</div>
+        </article>
+
+        <!-- ---------- Tool 4: AKTU ---------- -->
+        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm" aria-labelledby="aktu-title">
+          <h3 id="aktu-title" class="text-lg font-bold text-brand-700">AKTU CGPA to Percentage</h3>
+          <p class="text-sm text-slate-500 mt-1">Dr. A.P.J. Abdul Kalam Technical University, Lucknow.</p>
+
+          <label class="block mt-4 text-sm font-medium" for="aktu-formula">Formula</label>
+          <select id="aktu-formula" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:ring-2 focus:ring-brand-500 focus:outline-none">
+            <option value="aktu_75">(CGPA × 10) − 7.5</option>
+            <option value="x10">CGPA × 10</option>
+          </select>
+
+          <label class="block mt-4 text-sm font-medium" for="aktu-cgpa">Your CGPA</label>
+          <input id="aktu-cgpa" type="number" step="0.01" min="0" max="10" inputmode="decimal" placeholder="e.g. 7.90"
+                 class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 focus:ring-2 focus:ring-brand-500 focus:outline-none" />
+
+          <button data-calc="aktu" class="mt-4 w-full rounded-lg bg-brand-500 hover:bg-brand-600 text-white font-semibold py-2.5">Calculate</button>
+          <div id="aktu-result" class="result-box mt-4 rounded-lg bg-leaf-50 border border-leaf-100 p-3 text-sm" aria-live="polite">Result will appear here.</div>
+          <p class="mt-3 text-xs text-slate-500">Published sources disagree on AKTU. Use the rule printed on your result document.</p>
+        </article>
+
+        <!-- ---------- Tool 5: Exam Age Calculator ---------- -->
+        <article class="rounded-2xl border border-brand-100 bg-brand-50/40 p-6 shadow-sm md:col-span-2" aria-labelledby="age-title">
+          <h3 id="age-title" class="text-lg font-bold text-brand-700">Exam Age Calculator (SSC, UPSC, Railways &amp; more)</h3>
+          <p class="text-sm text-slate-500 mt-1">Find your exact age on the cut-off date mentioned in the official notification.</p>
+
+          <div class="grid sm:grid-cols-2 gap-4 mt-4">
+            <div>
+              <label class="block text-sm font-medium" for="age-dob">Date of Birth</label>
+              <input id="age-dob" type="date" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium" for="age-cutoff">Cut-off Date</label>
+              <input id="age-cutoff" type="date" class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none" />
+            </div>
+          </div>
+
+          <button data-calc="age" class="mt-4 w-full sm:w-auto rounded-lg bg-leaf-600 hover:bg-leaf-500 text-white font-semibold px-8 py-2.5">Calculate Age</button>
+          <div id="age-result" class="result-box mt-4 rounded-lg bg-white border border-leaf-100 p-3 text-sm" aria-live="polite">Result will appear here.</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ BLOG / GUIDES ============ -->
+    <section id="guides" class="bg-slate-50 border-y border-slate-100">
+      <div class="max-w-6xl mx-auto px-4 py-14">
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 text-center">Guides &amp; Articles</h2>
+        <p class="text-center text-slate-500 mt-2 mb-10">Step-by-step explainers for students and exam aspirants.</p>
+
+        <div class="grid gap-6 md:grid-cols-3">
+          <!-- Placeholder blog cards: replace href and text with real posts -->
+          <article class="rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition">
+            <div class="h-32 bg-gradient-to-r from-brand-500 to-brand-700 flex items-center justify-center text-white text-4xl" aria-hidden="true">🎓</div>
+            <div class="p-5">
+              <span class="text-xs font-semibold text-brand-600">CGPA Guide</span>
+              <h3 class="mt-1 font-bold text-slate-900">How to Calculate Mumbai University CGPA</h3>
+              <p class="mt-2 text-sm text-slate-600">Understand SGPA, credits and grade points, and how they combine into your final CGPA.</p>
+              <a href="mumbai-university-cgpa-guide.html" class="mt-3 inline-block text-sm font-semibold text-brand-600 hover:underline">Read more →</a>
+            </div>
+          </article>
+
+          <article class="rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition">
+            <div class="h-32 bg-gradient-to-r from-leaf-500 to-leaf-600 flex items-center justify-center text-white text-4xl" aria-hidden="true">📅</div>
+            <div class="p-5">
+              <span class="text-xs font-semibold text-leaf-600">Exam Age</span>
+              <h3 class="mt-1 font-bold text-slate-900">SSC CGL Age Limit 2026</h3>
+              <p class="mt-2 text-sm text-slate-600">How age limits and category relaxations work, and why the notification's cut-off date matters.</p>
+              <a href="ssc-cgl-age-limit.html" class="mt-3 inline-block text-sm font-semibold text-brand-600 hover:underline">Read more →</a>
+            </div>
+          </article>
+
+          <article class="rounded-2xl bg-white border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition">
+            <div class="h-32 bg-gradient-to-r from-brand-500 to-leaf-500 flex items-center justify-center text-white text-4xl" aria-hidden="true">📄</div>
+            <div class="p-5">
+              <span class="text-xs font-semibold text-brand-600">Documents</span>
+              <h3 class="mt-1 font-bold text-slate-900">CGPA to Percentage Certificate: When You Need It</h3>
+              <p class="mt-2 text-sm text-slate-600">Applying for jobs, MS abroad or government posts? Learn how to get an official conversion letter.</p>
+              <a href="cgpa-certificate-guide.html" class="mt-3 inline-block text-sm font-semibold text-brand-600 hover:underline">Read more →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ (mirrors the JSON-LD above) ============ -->
+    <section id="faq" class="max-w-3xl mx-auto px-4 py-14">
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 text-center mb-8">Frequently Asked Questions</h2>
+      <div class="space-y-3">
+        <details class="rounded-xl border border-slate-200 p-4 group">
+          <summary class="font-semibold cursor-pointer">How do I convert Mumbai University CGPA to percentage?</summary>
+          <p class="mt-2 text-sm text-slate-600">The commonly published Mumbai University engineering formula is Percentage = 7.1 × CGPA + 11. Rules can differ by faculty and scheme, so always confirm with your official marksheet or the university circular.</p>
+        </details>
+        <details class="rounded-xl border border-slate-200 p-4">
+          <summary class="font-semibold cursor-pointer">What is the SPPU CGPA to percentage formula?</summary>
+          <p class="mt-2 text-sm text-slate-600">SPPU circular no. 332 of 2020 gives grade-band equations (for example 10 × CGPA − 7.5 for the A band, CGPA 6.75 to 8.24). A simpler (CGPA − 0.75) × 10 rule is also widely quoted. UniCalc India lets you choose and shows the equation used.</p>
+        </details>
+        <details class="rounded-xl border border-slate-200 p-4">
+          <summary class="font-semibold cursor-pointer">What is the VTU CGPA to percentage formula?</summary>
+          <p class="mt-2 text-sm text-slate-600">The most widely quoted VTU formula is Percentage = (CGPA − 0.75) × 10. Some sources list CGPA × 10 for newer schemes, so verify against your VTU marksheet.</p>
+        </details>
+        <details class="rounded-xl border border-slate-200 p-4">
+          <summary class="font-semibold cursor-pointer">How is AKTU CGPA converted to percentage?</summary>
+          <p class="mt-2 text-sm text-slate-600">Published sources differ: some give Percentage = (CGPA × 10) − 7.5, others CGPA × 10. UniCalc India supports both and shows the formula used. Check your AKTU result document.</p>
+        </details>
+        <details class="rounded-xl border border-slate-200 p-4">
+          <summary class="font-semibold cursor-pointer">How is age calculated for government exams like SSC and UPSC?</summary>
+          <p class="mt-2 text-sm text-slate-600">Age is counted from your date of birth to the cut-off date given in the official notification, expressed in completed years, months and days. Use the cut-off date from the notice, not today's date.</p>
+        </details>
+        <details class="rounded-xl border border-slate-200 p-4">
+          <summary class="font-semibold cursor-pointer">Are these calculator results official?</summary>
+          <p class="mt-2 text-sm text-slate-600">No. Results are for guidance only. Universities and recruiters accept the percentage stated on your official marksheet or conversion certificate.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER / TRUST LINKS ============ -->
+  <footer class="bg-slate-900 text-slate-300">
+    <div class="max-w-6xl mx-auto px-4 py-10 grid gap-8 md:grid-cols-3">
+      <div>
+        <p class="font-extrabold text-white text-lg">UniCalc <span class="text-leaf-500">India</span></p>
+        <p class="mt-2 text-sm text-slate-400">Free calculators for Indian college students and government exam aspirants.</p>
+      </div>
+      <div>
+        <p class="font-semibold text-white mb-2">Quick Links</p>
+        <ul class="space-y-1 text-sm">
+          <li><a class="hover:text-white" href="#calculators">Calculators</a></li>
+          <li><a class="hover:text-white" href="#guides">Guides &amp; Articles</a></li>
+          <li><a class="hover:text-white" href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold text-white mb-2">Company</p>
+        <ul class="space-y-1 text-sm">
+          <!-- Pages to be created later -->
+          <li><a class="hover:text-white" href="/about-us.html">About Us</a></li>
+          <li><a class="hover:text-white" href="/contact-us.html">Contact Us</a></li>
+          <li><a class="hover:text-white" href="/privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 text-center text-xs text-slate-500 px-4 py-4">
+      © <span id="year"></span> UniCalc India. Results are for guidance only. Please verify with your official marksheet or notification. Not affiliated with any university.
+    </div>
+  </footer>
+
+  <script>
+    /* ================= PURE CALCULATION LOGIC (testable) ================= */
+    // BEGIN_LOGIC
+    const round2 = (n) => Math.round((n + Number.EPSILON) * 100) / 100;
+
+    // Single-line formulas: returns { pct, text }
+    function linearFormula(key, c) {
+      switch (key) {
+        case 'mu_eng':     return { pct: 7.1  * c + 11,  text: '7.1 × CGPA + 11' };
+        case 'mu_7pt':     return { pct: 7.25 * c + 11,  text: '7.25 × CGPA + 11' };
+        case 'sppu_simple':
+        case 'vtu_075':    return { pct: (c - 0.75) * 10, text: '(CGPA − 0.75) × 10' };
+        case 'aktu_75':    return { pct: c * 10 - 7.5,   text: '(CGPA × 10) − 7.5' };
+        case 'x10':        return { pct: c * 10,         text: 'CGPA × 10' };
+      }
+      return null;
+    }
+
+    // SPPU Circular 332 of 2020: separate equation for each grade band
+    function sppuTiered(c) {
+      if (c >= 9.5)  return { pct: 20 * c - 100,   text: 'O band: 20 × CGPA − 100' };
+      if (c >= 8.25) return { pct: 12 * c - 25,    text: 'A+ band: 12 × CGPA − 25' };
+      if (c >= 6.75) return { pct: 10 * c - 7.5,   text: 'A band: 10 × CGPA − 7.5' };
+      if (c >= 5.75) return { pct: 5 * c + 26.25,  text: 'B+ band: 5 × CGPA + 26.25' };
+      if (c >= 4.75) return { pct: 10 * c - 10,    text: 'B band: 10 × CGPA − 10' };
+      if (c >= 4.0)  return { pct: 6.6 * c + 13.6, text: 'C band: 6.6 × CGPA + 13.6' };
+      return null; // below 4.00 is outside the published table
+    }
+
+    // Master conversion: returns { ok, pct, text } or { ok:false, error }
+    function convert(formulaKey, cgpaRaw) {
+      const c = parseFloat(cgpaRaw);
+      if (cgpaRaw === '' || isNaN(c)) return { ok: false, error: 'Please enter your CGPA.' };
+      if (c < 0) return { ok: false, error: 'CGPA cannot be negative.' };
+      const maxScale = formulaKey === 'mu_7pt' ? 7 : 10;
+      if (c > maxScale) return { ok: false, error: 'CGPA cannot be more than ' + maxScale + ' for this scheme.' };
+      const r = formulaKey === 'sppu_tier' ? sppuTiered(c) : linearFormula(formulaKey, c);
+      if (!r) return { ok: false, error: 'CGPA below 4.00 is outside the published SPPU table. Check your marksheet.' };
+      return { ok: true, pct: round2(Math.max(0, r.pct)), text: r.text };
+    }
+
+    // Exact age between two ISO dates (yyyy-mm-dd). Months/days borrow like a calendar.
+    function exactAge(dobStr, cutStr) {
+      if (!dobStr || !cutStr) return { ok: false, error: 'Please select both dates.' };
+      const [dy, dm, dd] = dobStr.split('-').map(Number);
+      const [cy, cm, cd] = cutStr.split('-').map(Number);
+      const dobUTC = Date.UTC(dy, dm - 1, dd), cutUTC = Date.UTC(cy, cm - 1, cd);
+      if (dobUTC > cutUTC) return { ok: false, error: 'Date of birth must be on or before the cut-off date.' };
+      // Whole months elapsed, then count leftover days from the last full-month anniversary
+      // (anniversary day is clamped to month-end, e.g. 31 Jan + 1 month = 28/29 Feb).
+      let totalMonths = (cy - dy) * 12 + (cm - dm);
+      if (cd < dd) totalMonths -= 1;
+      const years = Math.floor(totalMonths / 12), months = totalMonths % 12;
+      const idx = dy * 12 + (dm - 1) + totalMonths;
+      const ay = Math.floor(idx / 12), am = idx % 12;
+      const dim = new Date(Date.UTC(ay, am + 1, 0)).getUTCDate();
+      const anchorUTC = Date.UTC(ay, am, Math.min(dd, dim));
+      const days = Math.round((cutUTC - anchorUTC) / 86400000);
+      const totalDays = Math.round((cutUTC - dobUTC) / 86400000);
+      return { ok: true, years, months, days, totalDays };
+    }
+    // END_LOGIC
+
+    /* ================= UI WIRING ================= */
+    const $ = (id) => document.getElementById(id);
+
+    function showError(box, msg) {
+      box.className = 'result-box mt-4 rounded-lg bg-red-50 border border-red-200 p-3 text-sm text-red-700';
+      box.textContent = msg;
+    }
+    function showOk(box, html) {
+      box.className = 'result-box mt-4 rounded-lg bg-leaf-50 border border-leaf-100 p-3 text-sm';
+      box.innerHTML = html;
+    }
+
+    // Generic CGPA calculators (mu, sppu, vtu, aktu)
+    function runCgpa(prefix) {
+      const box = $(prefix + '-result');
+      const res = convert($(prefix + '-formula').value, $(prefix + '-cgpa').value.trim());
+      if (!res.ok) return showError(box, res.error);
+      showOk(box,
+        '<p class="text-2xl font-extrabold text-leaf-600">' + res.pct.toFixed(2) + '%</p>' +
+        '<p class="text-slate-600 mt-1">Formula used: <span class="font-medium">' + res.text + '</span></p>');
+    }
+
+    function runAge() {
+      const box = $('age-result');
+      const r = exactAge($('age-dob').value, $('age-cutoff').value);
+      if (!r.ok) {
+        box.className = 'result-box mt-4 rounded-lg bg-red-50 border border-red-200 p-3 text-sm text-red-700';
+        box.textContent = r.error; return;
+      }
+      box.className = 'result-box mt-4 rounded-lg bg-white border border-leaf-100 p-3 text-sm';
+      box.innerHTML =
+        '<p class="text-2xl font-extrabold text-leaf-600">' + r.years + ' Years, ' + r.months + ' Months, ' + r.days + ' Days</p>' +
+        '<p class="text-slate-600 mt-1">Total days lived: ' + r.totalDays.toLocaleString('en-IN') + '</p>';
+    }
+
+    document.querySelectorAll('[data-calc]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const k = btn.dataset.calc;
+        k === 'age' ? runAge() : runCgpa(k);
+      });
+    });
+    // Pressing Enter inside a CGPA field also calculates
+    ['mu', 'sppu', 'vtu', 'aktu'].forEach((p) =>
+      $(p + '-cgpa').addEventListener('keydown', (e) => { if (e.key === 'Enter') runCgpa(p); }));
+
+    // Footer year and default cut-off date = today (user can change it)
+    $('year').textContent = new Date().getFullYear();
+    (function () {
+      const t = new Date();
+      const pad = (n) => String(n).padStart(2, '0');
+      $('age-cutoff').value = t.getFullYear() + '-' + pad(t.getMonth() + 1) + '-' + pad(t.getDate());
+    })();
+  </script>
+</body>
+</html>
